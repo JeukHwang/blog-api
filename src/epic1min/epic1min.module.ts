@@ -8,6 +8,6 @@ import { PrismaService } from 'src/prisma/prisma.service';
 @Module({
   imports: [HttpModule, PrismaModule],
   providers: [Epic1minService, PrismaService],
-  controllers: [Epic1minController]
+  controllers: [Epic1minController],
 })
 export class Epic1minModule {}
