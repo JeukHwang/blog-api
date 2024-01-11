@@ -4,6 +4,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { Epic1minModule } from './epic1min/epic1min.module';
 import { PrismaModule } from './prisma/prisma.module';
+import { MakeMeSayModule } from './make-me-say/make-me-say.module';
 
 @Module({
   imports: [
@@ -19,6 +20,7 @@ import { PrismaModule } from './prisma/prisma.module';
         },
       },
     }),
+    MakeMeSayModule,
   ],
   controllers: [AppController],
   providers: [AppService],
