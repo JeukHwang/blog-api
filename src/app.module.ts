@@ -5,6 +5,8 @@ import { AppService } from './app.service';
 import { Epic1minModule } from './epic1min/epic1min.module';
 import { PrismaModule } from './prisma/prisma.module';
 import { MakeMeSayModule } from './make-me-say/make-me-say.module';
+import { Go2whereModule } from './go2where/go2where.module';
+import { Go2wehreService } from './go2wehre/go2wehre.service';
 
 @Module({
   imports: [
@@ -21,8 +23,9 @@ import { MakeMeSayModule } from './make-me-say/make-me-say.module';
       },
     }),
     MakeMeSayModule,
+    Go2whereModule,
   ],
   controllers: [AppController],
-  providers: [AppService],
+  providers: [AppService, Go2wehreService],
 })
 export class AppModule {}
